@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Galaxy Hotel and Restaurant Skardu</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/hotel_background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #333;
+            padding: 20px;
+            margin: 0;
+        }
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .container {
+            margin: 10px auto;
+        }
+        header {
+            text-align: center;
+            padding: 10px 0;
+        }
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 3em;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 30px;
+        }
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .contact-info {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin-bottom: 5px;
+        }
+        .social-icons {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .social-icons a {
+            display: inline-inline;
+            margin-right: 10px;
+            font-size: 1.5em;
+            color: #333;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #555;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        .room, .facility {
+            margin-bottom:20px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 1px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .room img, .facility img {
+            max-width: 50%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 1px;
+        }
+        .room h3, .facility h3 {
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .room p, .facility p {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .book-btn {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .book-btn:hover {
+            background-color: #555;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        form input, form select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+        }
+        form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <header>
+            <h1>Royal Galaxy Hotel and Restaurant Skardu</h1>
+            <nav>
+                <ul>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#facilities">Facilities</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#booking">Book Now</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="rooms">
+            <div class="container">
+                <h2 class="section-title">Our Rooms</h2>
+		
+		 <div class="room">
+                    <img src="file:///C:/Users/PC/Desktop/images/ROOM%202.jpg" alt="Room 1">
+                    <h3>Deluxe Room</h3>
+		    <h4>RS.6500</h4>
+                    <p>Enjoy our spacious and luxurious deluxe room with scenic views of Skardu.</p>
+                    <button class="book-btn" data-room-type="Deluxe Room">Book Now</button>
+                </div>
+
+                <div class="room">
+                    <img src="file:///C:/Users/PC/Desktop/images/ROOM%201.jpg" alt="Room 2">
+                    <h3>Executive Suite</h3>
+                    <h4>RS.4500</h4>
+                    <p>Indulge in our executive suite offering premium comfort and elegance.</p>
+                    <button class="book-btn" data-room-type="Executive Suite">Book Now</button>
+                </div>
+		
+		 <div class="room">
+                    <img src="file:///C:/Users/PC/Desktop/images/ROOM%203.jpg" alt="Room 3">
+                    <h3>Deluxe Room</h3>
+                    <h4>RS.7000</h4>
+                    <p>enjoy in our Double Bed Deluxe Room offering premium comfort and elegance.</p>
+                    <button class="book-btn" data-room-type="Executive Suite">Book Now</button>
+                </div>
+
+		 <div class="room">
+                    <img src="file:///C:/Users/PC/Desktop/images/ROOM%204.jpg" alt="Room 4">
+                    <h3>Executive Suite</h3>
+                    <p>Indulge in our executive suite offering premium comfort and elegance.</p>
+                    <button class="book-btn" data-room-type="Executive Suite">Book Now</button>
+                </div>
+
+		 <div class="room">
+                    <img src="file:///C:/Users/PC/Desktop/images/ROOM%206.jpg" alt="Room 5">
+                    <h3>Executive Suite</h3>
+                    <h4>RS.6500</h4>
+                    <p>Indulge in our executive suite offering premium comfort and elegance.</p>
+                    <button class="book-btn" data-room-type="Executive Suite">Book Now</button>
+                </div>
+
+		 <div class="room">
+                    <img src="file:///C:/Users/PC/Desktop/images/ROOM%207.jpg" alt="Room 6">
+                    <h3>Executive Suite</h3>
+                    <p>Indulge in our executive suite offering premium comfort and elegance.</p>
+                    <button class="book-btn" data-room-type="Executive Suite">Book Now</button>
+                </div>
+
+		 <div class="room">
+                    <img src="file:///C:/Users/PC/Desktop/images/ROOM%208.jpg" alt="Room 7">
+                    <h3>Executive Suite</h3>
+                    <p>Indulge in our executive suite offering premium comfort and elegance.</p>
+                    <button class="book-btn" data-room-type="Executive Suite">Book Now</button>
+                </div>
+
+
+
+                <!-- Add more rooms as needed -->
+
+            </div>
+        </section>
+
+        <section id="facilities">
+            <div class="container">
+                <h2 class="section-title">Our Facilities</h2>
+
+                <div class="facility">
+                    <img src="file:///C:/Users/PC/Desktop/249.jpg" alt="Facility 1">
+                    <h3>Free Wi-Fi</h3>
+                    <p>Stay connected with our complimentary high-speed internet access.</p>
+                </div>
+
+                <div class="facility">
+                    <img src="file:///C:/Users/PC/Desktop/HD-wallpaper-norwood-norwood-ma-restaurant
+			-menu-delivery-north-indian-food.jpg" alt="Facility 2">
+                    <h3>Restaurant</h3>
+                    <p>Enjoy a variety of delicious meals at our in-house restaurant.</p>
+                </div>
+
+                <div class="facility">
+                    <img src="file:///C:/Users/PC/Desktop/2014-08-02-roomservice.jpg" alt="Facility 3">
+                    <h3>24/7 Room Service</h3>
+                    <p>Experience the convenience of our 24/7 room service.</p>
+                </div>
+
+		<div class="facility">
+                    <img src="file:///C:/Users/PC/Desktop/free-parking-feb-2022.jpg" alt="Facility 3">
+                    <h3>24/7 Free Parking System</h3>
+                    <p>Experience the Free And Safe Parking System for 24/7.</p>
+                </div>
+
+                <!-- Add more facilities as needed -->
+
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="container">
+                <h2 class="section-title">Gallery</h2>
+
+                <div class="gallery">
+                    <img src="file:///C:/Users/PC/Desktop/198504848
+			_620014609392412_4681927000576702945_n.jpg" alt="Gallery Image 1">
+                    <img src="file:///C:/Users/PC/Desktop/2014-08-02-roomservice.jpg" alt="Gallery Image 2">
+                    <img src="file:///C:/Users/PC/Desktop/2021-09-25.jpg" alt="Gallery Image 3">
+                    <!-- Add more gallery images as needed -->
+                </div>
+            </div>
+        </section>
+
+        <section id="booking">
+            <div class="container">
+                <h2 class="section-title">Book Your Stay</h2>
+
+                <form id="bookingForm">
+                    <label for="checkInDate">Check-in Date:</label>
+                    <input type="date" id="checkInDate" name="checkInDate" required>
+
+                    <label for="checkOutDate">Check-out Date:</label>
+                    <input type="date" id="checkOutDate" name="checkOutDate" required>
+
+                    <label for="roomType">Room Type:</label>
+                    <select id="roomType" name="roomType" required>
+                        <option value="Deluxe Room">Deluxe Room</option>
+                        <option value="Executive Suite">Executive Suite</option>
+                        <!-- Add more room options as needed -->
+                    </select>
+
+                    <label for="guestName">Your Name:</label>
+                    <input type="text" id="guestName" name="guestName" required>
+
+                    <label for="guestEmail">Your Email:</label>
+                    <input type="email" id="guestEmail" name="guestEmail" required>
+
+                    <button type="submit">Book Now</button>
+                </form>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+
+                <div class="contact-info">
+                    <p><strong>Address:</strong> Skardu, Gilgit-Baltistan, Pakistan</p>
+                    <p><strong>Phone:</strong> +92 345 678901</p>
+                    <p><strong>WhatsApp:</strong> +92 345 678901</p>
+                    <p><strong>Email:</strong> info@royalgalaxyhotel.com</p>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://facebook.com/yourhotel"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/yourhotel"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const bookingForm = document.getElementById('bookingForm');
+            bookingForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const checkInDate = document.getElementById('checkInDate').value;
+                const checkOutDate = document.getElementById('checkOutDate').value;
+                const roomType = document.getElementById('roomType').value;
+                const guestName = document.getElementById('guestName').value;
+                const guestEmail = document.getElementById('guestEmail').value;
+
+                if (checkInDate === '' || checkOutDate === '' || roomType === '' || guestName === '' || guestEmail === '') {
+                    alert('Please fill in all fields.');
+                    return;
+                }
+
+                // Simulated booking confirmation (replace with actual backend integration)
+                alert(`Thank you, ${guestName}! Your booking for a ${roomType} from ${checkInDate} to ${checkOutDate} has been received.`);
+                bookingForm.reset(); // Clear form after submission
+            });
+
+            // Room booking buttons (scroll to booking section and preselect room type)
+            const bookButtons = document.querySelectorAll('.book-btn');
+            bookButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    const roomType = button.getAttribute('data-room-type');
+                    document.getElementById('roomType').value = roomType;
+                    // Optional: Smooth scroll to booking section
+                    document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+
+    <!-- Font Awesome icons (for social media icons) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
